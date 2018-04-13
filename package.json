@@ -1,7 +1,7 @@
 {
   "name": "discord-soundbot",
   "version": "1.0.1",
-  "description": "A Discord Bot to play sounds",
+  "description": "A Soundboard Bot for Discord",
   "repository": {
     "type": "git",
     "url": "https://github.com/markokajzer/discord-soundbot"
@@ -31,8 +31,12 @@
     "@types/jasmine": "^2.8.6",
     "@types/lowdb": "^1.0.0",
     "@types/node": "^8.9.5",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-replace": "^0.6.1",
     "jasmine": "^3.1.0",
     "nyc": "^11.4.1",
+    "pkg": "^4.3.1",
     "ts-node": "^5.0.1",
     "tslint": "^5.9.1",
     "typescript": "^2.7.2"
@@ -43,10 +47,11 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build": "tsc -p tsconfig.json",
+    "pkg": "gulp pkg",
     "lint": "tslint -p tsconfig.json",
     "test": "nyc jasmine --config=./test/support/jasmine.json",
     "serve": "node dist/bot.js",
     "start": "npm run build && npm run serve",
-    "release": "npm run build && npm run lint && npm run test"
+    "release": "npm run build && npm run lint && npm run test && npm run pkg"
   }
 }

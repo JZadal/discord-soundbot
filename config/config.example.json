@@ -1,6 +1,6 @@
 {
-  "clientID": "YOUR_CLIENT_ID",
-  "token": "YOUR_APP_BOT_USER_TOKEN",
+  "clientID": "471346348822888458",
+  "token": "NDcxMzQ2MzQ4ODIyODg4NDU4.DjjgDg.XkwGbbTJ0y3I9SyzUTayGfOT9zw",
   "prefix": "!",
   "acceptedExtensions": [".mp3", ".wav"],
   "maximumFileSize": 1000000,
